@@ -1,0 +1,30 @@
+# Ignore all Python files
+*.pyc
+__pycache__/
+
+# Ignore virtual environments
+.venv/
+venv/
+
+# Ignore Jupyter notebooks (optional)
+*.ipynb
+
+# Ignore Streamlit's cache
+.streamlit/config.toml
+.streamlit/credentials.toml
+
+# Ignore data files you don't want to share (optional)
+*.csv
+*.tsv
+*.json
+*.xlsx
+
+# Keep hidden folders except .venv and __pycache__
+!.streamlit/
+
+# Keep specific files (if needed)
+!*.md
+!*.txt
+!*.html
+!*.css
+!*.js
