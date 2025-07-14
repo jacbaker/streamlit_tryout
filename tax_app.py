@@ -4,11 +4,15 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+
 st.sidebar.subheader('Adjust income and exchange rate using the sliders')
 income = st.sidebar.slider('income (aussie dollars)', 10000, 400000, 100000)
 exchange_rate = st.sidebar.slider('exchange rate £ to $', 1.5, 2.5, 2.05)
 
 uk_equivalent = income / exchange_rate
+
+st.subheader(f'In Aussie dollars your income is ${income:,.2f}')
+st.subheader(f'In UK pounds this is £{uk_equivalent:,.2f}')
 
 st.sidebar.write(f'income: ${income:,.2f}')
 st.sidebar.write(f'uk equivalent: £{uk_equivalent:,.2f}')
